@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidShortcuts</string>
+    <string name="sc_disable">sc_disable</string>
+    <string name="sc_long">sc_long</string>
+    <string name="sc_short">sc_short</string>
+    <string name="sc_disable_2">sc_disable_2</string>
+    <string name="sc_long_2">sc_long_2</string>
+    <string name="sc_short_2">sc_short_2</string>
+</resources>

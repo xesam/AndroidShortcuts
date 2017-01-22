@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher"
+        android:shortcutDisabledMessage="@string/sc_disable"
+        android:shortcutId="short_1"
+        android:shortcutLongLabel="@string/sc_long"
+        android:shortcutShortLabel="@string/sc_short">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.github.xesam.android.shortcuts.Sub1Activity"
+            android:targetPackage="com.github.xesam.android.shortcuts" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher"
+        android:shortcutDisabledMessage="@string/sc_disable_2"
+        android:shortcutId="short_2"
+        android:shortcutLongLabel="@string/sc_long_2"
+        android:shortcutShortLabel="@string/sc_short_2">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.github.xesam.android.shortcuts.Sub2Activity"
+            android:targetPackage="com.github.xesam.android.shortcuts" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>
