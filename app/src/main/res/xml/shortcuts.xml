@@ -22,6 +22,11 @@
         android:shortcutShortLabel="@string/sc_short_2">
         <intent
             android:action="android.intent.action.VIEW"
+            android:targetClass="com.github.xesam.android.shortcuts.Sub1Activity"
+            android:targetPackage="com.github.xesam.android.shortcuts" />
+
+        <intent
+            android:action="android.intent.action.VIEW"
             android:targetClass="com.github.xesam.android.shortcuts.Sub2Activity"
             android:targetPackage="com.github.xesam.android.shortcuts" />
         <categories android:name="android.shortcut.conversation" />
