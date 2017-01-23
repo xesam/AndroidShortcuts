@@ -95,6 +95,16 @@ public class ShortcutMgr {
         }
     }
 
+    public boolean report() {
+        if (checkCompat()) {
+            ShortcutManager shortcutManager = mContext.getSystemService(ShortcutManager.class);
+            shortcutManager.reportShortcutUsed("add_1");
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     /**
      * 创建快捷方式
      */

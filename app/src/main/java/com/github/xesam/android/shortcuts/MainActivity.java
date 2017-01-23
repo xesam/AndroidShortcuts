@@ -40,5 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 shortcutMgr.remove();
             }
         });
+        findViewById(R.id.report_dynamic_shortcut).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ShortcutMgr shortcutMgr = new ShortcutMgr(getApplicationContext());
+                shortcutMgr.report();
+            }
+        });
     }
 }

@@ -39,4 +39,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="remove dynamic shortcut" />
+
+    <Button
+        android:id="@+id/report_dynamic_shortcut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="report dynamic shortcut" />
 </LinearLayout>
