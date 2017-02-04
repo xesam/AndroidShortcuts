@@ -107,8 +107,10 @@ public class ShortcutMgr {
 
     /**
      * 创建快捷方式
+     * <p>
+     * 要求权限 com.android.launcher.permission.INSTALL_SHORTCUT
      */
-    public static void createShortcut(Context context, String shortcutName, @DrawableRes int logoResId, Intent shortCutIntent) {
+    public void createShortcut(Context context, String shortcutName, @DrawableRes int logoResId, Intent shortCutIntent) {
         Intent intent = new Intent("com.android.launcher.action.INSTALL_SHORTCUT");
         intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, shortcutName);
         intent.putExtra("duplicate", false);

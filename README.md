@@ -1,3 +1,8 @@
+## Android 快捷方式 Demo
+
+1. launcher shortcut
+2. App Shortcuts
+
 ## 问题
 
 文档中说：

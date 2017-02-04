@@ -1,5 +1,6 @@
 package com.github.xesam.android.shortcuts;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -45,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 ShortcutMgr shortcutMgr = new ShortcutMgr(getApplicationContext());
                 shortcutMgr.report();
+            }
+        });
+        findViewById(R.id.launcher_shortcut).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ShortcutMgr shortcutMgr = new ShortcutMgr(getApplicationContext());
+                shortcutMgr.createShortcut(getApplicationContext(), "test", R.drawable.ic_launcher, new Intent(getApplicationContext(), MainActivity.class));
             }
         });
     }
